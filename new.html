@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html lang="en-US">  
+  
+<head> 
+    <title> 
+        How To Add Google Translate 
+        Button On Your Webpage ? 
+    </title> 
+
+<style type="text/css">
+	.goog-logo-link {
+   display:none !important;
+} 
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    } 
+body {
+    top: 0px !important; 
+    }
+
+.goog-te-gadget{
+   color: transparent !important;
+}
+</style>
+
+</head> 
+
+
+  
+<body>  
+    <p>Hello everyone!</p>  
+    <p>Welcome to GeeksforGeeks</p>  
+      
+    <p> 
+        Translate this page in 
+        your preferred language: 
+    </p>  
+      
+  <div id="google_translate_element"></div>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en',
+        includedLanguages: "en,kn"},
+            'google_translate_element'
+        );
+    }
+</script>
+ 
+    </script>
+
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
